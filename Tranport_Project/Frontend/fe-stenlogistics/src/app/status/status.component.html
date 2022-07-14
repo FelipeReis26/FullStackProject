@@ -1,0 +1,44 @@
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<div class="bootstrap-wrapper">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 offset-md-3" style="margin-top: 50px;">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Value</th>
+              <th scope="col">Distance</th>
+              <th scope="col">Weight</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let g of goodsList; index as i">
+              <th scope="row">{{ i + 1 }}</th>
+              <td>{{ g.type }}</td>
+              <td>{{ g.value | number }}</td>
+              <td>{{ g.distance | number }}</td>
+              <td>{{ g.weight | number }}</td>
+            </tr>
+            </tbody>
+          </table>
+
+         
+
+          <div class="w3-light-grey" style="margin-top: 50px; width: 80%;">
+           
+            <h2 style="font-family:Cursive;">Your Shipment is in Progress.</h2>
+            
+            <div class="w3-grey" style="height:24px;width:5%">5%</div>
+          </div><br>
+          
+        </div>
+      </div>
+  </div>
+
+ 
+</div>

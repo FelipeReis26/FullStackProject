@@ -1,0 +1,55 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3" style="margin-top: 50px;">
+                <mat-card>
+                    <!-- <div class="container text-center">
+                        <img src="../../../assets/logo_1.jpg" alt="Education" width="100" height="auto">
+                    </div> -->
+                    <h1 class="text-center">Quote Details</h1>
+                    <!-- Template Driven Form --> 
+                   
+                    <form (ngSubmit)="formSubmit()">
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Goods type</mat-label>
+                                <input required [(ngModel)]="goods.type" name="goodtype" matInput
+                                placeholder="Enter Luggage Type">
+                            <mat-hint>Username must be Unique</mat-hint>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Value</mat-label>
+                                <input required [(ngModel)]="goods.value" name="value" type="text" matInput
+                                placeholder="Enter Value of the Goods">
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Distance</mat-label>
+                                <input name="distance" [(ngModel)]="goods.distance" matInput
+                                placeholder="Enter Distance to Travel">
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Weight</mat-label>
+                            <input [(ngModel)]="goods.weight"  name="lastName" matInput placeholder="Enter Weight">
+
+                        </mat-form-field>
+
+                        <!-- Buttons -->
+                        <div class="container text-center"> 
+                            <button type="submit" mat-raised-button color="primary">Send</button>
+                            <button type="reset" style="margin-left: 30px;" mat-raised-button color="accent">Reset</button>
+                        </div>
+                    </form>                   
+                </mat-card>
+
+        
+                <mat-card>
+                    <div class="container" *ngIf="successflag"> 
+                        <button (click)="statusPage()" mat-raised-button color="warn">Check Status</button>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

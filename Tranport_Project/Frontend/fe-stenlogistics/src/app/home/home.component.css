@@ -1,0 +1,32 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif
+}
+
+.w3-bar,h1,button {
+    font-family: "Montserrat", sans-serif
+}
+
+.icons a {
+    display: inline-block;
+}
+
+.inlineblock{
+    width: 70px;
+    display: inline-block;
+}
+
+.fa-brands .fa-facebook-f:hover{
+    color: black;
+    background: black;
+}
+ 
+
+.fa-stack:hover{
+    color: red
+}
+
+.btn-width{
+      width: 150px!important;
+      height: 50px!important;
+      min-width: unset!important;
+}
