@@ -1,84 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Sten Logistics Limited</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <title>Sten Logistics Limited</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+      <h1 class="w3-margin w3-jumbo">Sten Logistics Limited</h1>
+      <p class="w3-xlarge pt-3">We Provide you the Best Services.</p>
+      <button
+        class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+        (click)="getStarted()"
+      >
+        Place a Quote
+      </button>
+    </header>
 
-</head>
-<body>
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird mt-4">
+          <h1>Our Goal</h1>
+          <p class="text-style">
+            The Goal of the Company is to provide the secure and efficient
+            service to its customers. We carry your stuff/goods safely from its
+            origin to the destination within the given time mentioned in the
+            policy rules. We do not Carry any illegal things which may be the
+            cause of defamation of the company or the client. we believe for a
+            tranparent journey, it is very necessary to keep the transparency in
+            every stuff.
+          </p>
+        </div>
 
-
-<!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Sten Logistics Limited</h1>
-  <p class="w3-xlarge pt-3">We Provide you the Best Service.</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
-  (click)="getStarted()">Place a Quote</button>
-</header>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird mt-4"> 
-      <h1>Our Goal</h1>
-      <p class="text-style">The Goal of the Company is to provide the secure and efficient service to its customers. We carry your stuff/goods safely from its origin to the destination within the given time mentioned in the policy rules.
-        We do not Carry any illegal things which may be the cause of defamation of the company or the client. we believe for a tranparent journey, it is very necessary to keep the transparency in every stuff.
-      </p>
+        <div class="w3-third w3-center mt-4">
+          <i class="fa-solid fa-bullseye fa-10x" style="color:#f44336"></i>
+        </div>
+      </div>
     </div>
 
-    <div class="w3-third w3-center mt-4">
-        <i class="fa-solid fa-bullseye fa-10x" style="color:#f44336"></i>
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-third w3-center">
+          <i class="fa-regular fa-paper-plane fa-10x" style="color:#f44336"></i>
+        </div>
+
+        <div class="w3-twothird">
+          <h1>Our Service</h1>
+          <p class="text-style">
+            We provide you the best service by making sure that your stuff is
+            not damaged on the way. we provide a refund if your stuff breaks on
+            the way to its destination. we believe our customers satisfaction is
+            our company's satisfaction.
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-        <i class="fa-regular fa-paper-plane fa-10x" style="color:#f44336"></i>
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">
+        Quote of the day: Keep Yourself Motivated
+      </h1>
     </div>
 
-    <div class="w3-twothird">
-      <h1>Our Service</h1>
-      <p class="text-style">We provide you the best service by making sure that your stuff is not damaged on the way. we provide a refund if your stuff breaks on the way to its destination. we believe our customers satisfaction is our company's satisfaction.</p>
-    </div>
-  </div>
-</div>
+    <!-- Footer -->
+    <footer style="text-align: center; color: gray; " class="mt-4">
+      <span class="fa-stack fa-3x"
+        ><i class="fa-brands fa-facebook-f"></i
+      ></span>
+      <span class="fa-stack fa-3x"><i class="fa-brands fa-instagram"></i></span>
+      <span class="fa-stack fa-3x"><i class="fa-brands fa-snapchat"></i></span>
+      <span class="fa-stack fa-3x"><i class="fa-brands fa-twitter"></i></span>
+      <span class="fa-stack fa-3x"
+        ><i class="fa-brands fa-linkedin-in"></i
+      ></span>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: Keep Yourself Motivated</h1>
-</div>
+      <p>Powered by Sten Logistics Limited</p>
+    </footer>
 
-<!-- Footer --> 
-<footer style="text-align: center; color: gray; " class="mt-4"> 
-    <span class="fa-stack fa-3x"><i class="fa-brands fa-facebook-f" ></i></span>   
-    <span class="fa-stack fa-3x"><i class="fa-brands fa-instagram" ></i></span>
-    <span class="fa-stack fa-3x" ><i class="fa-brands fa-snapchat" ></i></span>
-    <span class="fa-stack fa-3x" ><i class="fa-brands fa-twitter" ></i></span>
-    <span class="fa-stack fa-3x"><i class="fa-brands fa-linkedin-in"></i></span>
-    
- <p>Powered by Sten Logistics Limited</p>
-</footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
-</body>
+    <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
 </html>
